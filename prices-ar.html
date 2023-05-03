@@ -811,50 +811,7 @@
 
         
     </script>
-    <script>
-        let next = document.querySelector('.btn-right');
-        let prev = document.querySelector('.btn-left');
-        let closeBtn = document.querySelector('.close-btn')
-
-        let images = document.querySelectorAll('.lightbox');
-        let lightboxCont = document.querySelector('.lightbox-cont');
-        let preview = document.querySelector('.preview');
-
-
-        let imgIndex = 0;
-        //opening the lightbox 
-        images.forEach(img =>{
-            img.addEventListener('click', function(e){
-                lightboxCont.classList.add('active');
-                preview.src = e.target.dataset.imagesrc
-
-                let imgIndex = [...images].indexOf(img);
-            })
-        })
-        
-        closeBtn.addEventListener('click', function(){
-            lightboxCont.classList.remove('active');
-        })
-        
-
-        prev.addEventListener('click', function(){
-            imgIndex--;
-            if(imgIndex < 0){
-                imgIndex = images.length-1;
-            }
-            preview.src = images[imgIndex].src;
-        });
-
-        next.addEventListener('click', function(){
-            imgIndex++;
-            if(imgIndex > images.length-1){
-                imgIndex = 0;
-            }
-            preview.src = images[imgIndex].src;
-        });
-        
-
-    </script>
+    
 </body>
 </html>
 
