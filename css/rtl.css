@@ -1,0 +1,86 @@
+* {
+    /* font-family: 'Cairo', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+form input {
+    text-align: right;
+
+}
+
+/* ============= home page =========== */
+
+nav .main-nav a {
+    font-size: 1.2rem;
+}
+
+.hero .brand h1 {
+    font-size: 4rem;
+}
+
+.floatsocial {
+    padding: 0;
+    right: 2%;
+}
+
+.about-cont {
+    padding: 0 5% 0 0;
+}
+
+.about-images img {
+    border-radius: 0 50px 50px 0;
+}
+
+/* ===================il latini=============== */
+.latin-cont {
+    padding: 0 5% 0 0;
+}
+
+.latin-image img {
+    border-radius: 0 50px 50px 0;
+}
+
+.goals-cont {
+    padding: 0 0 0 5%;
+}
+
+.goals .image img {
+    border-radius: 50px 0 0 50px;
+}
+
+.goals .text ul li {
+    font-weight: 600;
+}
+
+.vision-cont {
+    padding: 0 5% 0 0;
+}
+
+.vision .idea img {
+    border-radius: 0 50px 50px 0;
+}
+
+/* ================= prices page =============== */
+
+
+
+
+
+
+/* ================================================
+==================== media query ==================
+=================================================== */
+@media (max-width:992px) {
+    nav .main-nav {
+        left: -250px;
+    }
+
+    .main-nav.active {
+        left: 0;
+    }
+}
