@@ -1,0 +1,325 @@
+@media (max-width:992px) {
+
+    /* ===============header============= */
+    header .container {
+        position: relative;
+    }
+
+    nav .main-nav {
+        /* display: none; */
+        position: absolute;
+        top: -500%;
+        left: 0;
+        flex-direction: column;
+        transition: var(--trans);
+        width: 100%;
+    }
+
+    nav .main-nav li {
+        background-color: var(--head-color);
+        width: 100%;
+        /* animation: rotate 0.5s linear forwards; */
+        transform-origin: top right;
+        /* opacity: 0; */
+    }
+
+
+    nav .main-nav li:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    nav .main-nav li:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    nav .main-nav li:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotateZ(-90deg);
+        }
+
+        100% {
+            transform: rotateZ(0);
+            opacity: 1;
+        }
+    }
+
+    nav .main-nav a {
+        width: 100%;
+        margin: auto;
+        background-color: var(--head-color);
+    }
+
+    .main-nav.active {
+        top: 100%;
+        /* display: flex; */
+    }
+
+    .lang {
+        margin: 0 10px;
+    }
+
+    .mobile {
+        display: flex;
+        font-size: 2rem;
+    }
+
+    .menu-bar,
+    .close-menu {
+        border: 1px solid var(--btn-alt-color);
+
+        border-radius: 10px;
+        box-shadow: 0 0 5px var(--btn-alt-color), 0 0 10px var(--btn-alt-color);
+        background-color: var(--btn-sec-color);
+        color: white;
+        cursor: pointer;
+        transition: var(--trans);
+    }
+
+    .menu-bar:hover,
+    .close-menu:hover {
+        box-shadow: none;
+    }
+
+    /* ============= footer ========== */
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* ============== il latini page ============ */
+
+    .vision-cont>p {
+        padding: 0 0 0 5%;
+    }
+
+    /* ================ gallery ================ */
+    .close-btn,
+    .btn-right,
+    .btn-left {
+        font-size: 1.5rem;
+        box-shadow: 0 0 5px var(--head-color);
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:677px) {
+
+    section {
+        padding: 20px 0;
+    }
+
+    .logo .brand {
+        width: 150px;
+    }
+
+    .about-cont {
+        padding: 0 5%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-images img {
+        border-radius: 20px;
+    }
+
+    .al-cont {
+        flex-direction: column-reverse;
+    }
+
+
+
+    .part-cont {
+        flex-direction: column;
+    }
+
+    .part-images {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .partners .part-images img {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        object-fit: contain;
+    }
+
+    .part-text h2 {
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+    /* ==============================================
+    ================== il latini page ===============
+    =================================================*/
+
+    .latin-image iframe {
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    /* =================latin section =============== */
+
+    .latin-cont {
+        flex-direction: column;
+        padding: 0 5%
+    }
+
+    .latin-image img {
+        border-radius: 20px;
+    }
+
+    .latin-text h2 {
+        text-align: center;
+    }
+
+    .latin .btn-prim {
+        display: block;
+        margin: 10px auto 0;
+    }
+
+    /* ================= goals section ============== */
+    .goals-cont {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    .goals .text ul {
+        padding: 0px 5%;
+    }
+
+    .goals .image img {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    /* ================ design vision ============== */
+    .vision-cont {
+        padding: 0 5%;
+    }
+
+    .vision .idea {
+        flex-direction: column-reverse;
+    }
+
+    .vision .idea h2 {
+        text-align: center;
+    }
+
+    .vision .idea p {
+        margin-top: 10px;
+    }
+
+    .vision .idea .image img {
+        border-radius: 20px;
+    }
+
+    /* ================ gallery ================= */
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .close-btn,
+    .btn-right,
+    .btn-left {
+        font-size: 1.5rem;
+        box-shadow: 0 0 5px var(--head-color);
+    }
+
+    /* ============================================
+    ==================prices page =================
+    =============================================== */
+    .finish-cont {
+        flex-direction: column;
+    }
+
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .price-card .icons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .price-card .info {
+        flex-basis: 50%;
+    }
+
+    .overlay .sml-img .pop {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
+    /* ============================================
+    ===================== contact =================
+    =============================================== */
+    .contact-cont {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .contact-cont .social {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .contact-cont form {
+        width: 100%;
+    }
+
+    .social a {
+        background-color: var(--main-color);
+    }
+
+    .social a:nth-child(1) {
+        box-shadow: 0 0 10px var(--icon-face);
+        display: none;
+    }
+
+    .social a:nth-child(2) {
+        box-shadow: 0 0 10px var(--icon-whats);
+    }
+
+    .social a:nth-child(3) {
+        box-shadow: 0 0 10px var(--icon-call);
+    }
+
+    form {
+        width: 100%;
+    }
+
+}
