@@ -467,12 +467,15 @@ nav .main-nav li a.active {
     text-transform: capitalize;
 }
 
-
 .end {
-    border-top: 1px solid var(--head-color);
     background-color: black;
-    color: var(--par-color);
     text-align: center;
+
+}
+
+.end div {
+    border-top: 1px solid var(--head-color);
+    color: var(--par-color);
     font-weight: 400;
     text-transform: capitalize;
     display: flex;
@@ -516,7 +519,8 @@ nav .main-nav li a.active {
 }
 
 .latin-image {
-    flex: 50%;
+    flex: 100%;
+    overflow: hidden;
 }
 
 .latin-image img {
@@ -525,8 +529,14 @@ nav .main-nav li a.active {
     overflow: hidden;
 }
 
+.latin-image iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 50px 0 0 50px;
+}
+
 .latin-text {
-    flex: 50%;
+    flex: 100%;
 }
 
 .latin-text h2 {
@@ -1121,6 +1131,7 @@ nav .main-nav li a.active {
 }
 
 .contact-cont {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1239,9 +1250,15 @@ form input {
     border-radius: 5px;
 }
 
+
 form input:focus,
 form textarea:focus {
     outline: 2px solid var(--btn-color);
+}
+
+form input.error,
+form textarea.error {
+    outline: 2px solid red;
 }
 
 form .name {
@@ -1265,4 +1282,52 @@ form textarea {
 
 .contact-ft .container {
     justify-content: center;
+}
+
+.alert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1) !important;
+    z-index: 10000 !important;
+}
+
+.alert .cont {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px var(--btn-alt-color), 0 0 20px var(--btn-alt-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.alert .check {
+    position: absolute;
+    top: -20px;
+    background-color: var(--btn-alt-color);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.2rem;
+}
+
+.alert .cont h3 {
+    text-transform: capitalize;
+    text-align: center;
+    text-indent: 0;
+    padding: 10px 30px;
+    color: var(--h-color);
 }
